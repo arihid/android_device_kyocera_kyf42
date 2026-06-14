@@ -30,7 +30,7 @@ TARGET_KERNEL_CONFIG := kc_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel Output Formatting
-BOARD_KERNEL_IMAGE_NAME := kernel
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 # Display
 # Main panel: kc tovis2 fwvga = 480x854, density 240 (the 240x320 panel is the external sub-display).
