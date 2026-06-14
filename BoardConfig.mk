@@ -26,7 +26,7 @@ TARGET_KERNEL_HEADER_ARCH := arm
 
 # Point to your source path (The Action workflow will clone it here)
 TARGET_KERNEL_SOURCE := kernel/kyocera/sd215
-TARGET_KERNEL_CONFIG := kc_config
+TARGET_KERNEL_CONFIG := kc_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel Output Formatting
