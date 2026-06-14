@@ -1,4 +1,4 @@
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
 PRODUCT_DEVICE := kyf42
 PRODUCT_NAME := omni_kyf42
