@@ -1,4 +1,4 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/minimal.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := kyf42
 PRODUCT_NAME := omni_kyf42
@@ -6,3 +6,6 @@ PRODUCT_BRAND := KYOCERA
 PRODUCT_MODEL := KYF42
 PRODUCT_MANUFACTURER := kyocera
 PRODUCT_RELEASE_NAME := KYOCERA KYF42
+
+# Force TWRP compilation flags
+PRODUCT_BOOTIMAGE_4K_ALIGNMENT := true
