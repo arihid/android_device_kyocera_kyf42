@@ -19,7 +19,6 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # Target Architecture Architecture
 TARGET_KERNEL_ARCH := arm
@@ -28,9 +27,10 @@ TARGET_KERNEL_HEADER_ARCH := arm
 # Point to your source path (The Action workflow will clone it here)
 TARGET_KERNEL_SOURCE := kernel/kyocera/sd215
 TARGET_KERNEL_CONFIG := msm8937_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel Output Formatting
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := kernel
 
 # Display
 # Main panel: kc tovis2 fwvga = 480x854, density 240 (the 240x320 panel is the external sub-display).
