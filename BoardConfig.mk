@@ -50,6 +50,5 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 200
 
-# Force absolute path structure maps for Kconfig
-KERNEL_SRC_DIR := $(shell pwd)/kernel/kyocera/sd215
-MAKE_FLAGS += srctree=$(KERNEL_SRC_DIR)
+# Remove the previous absolute "shell pwd" lines and replace with this:
+KERNEL_TOOLCHAIN_PREFIX := prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-4.9
