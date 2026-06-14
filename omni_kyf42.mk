@@ -1,5 +1,4 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, vendor/twrp/config/gems.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/minimal.mk)
 
 PRODUCT_DEVICE := kyf42
 PRODUCT_NAME := omni_kyf42
